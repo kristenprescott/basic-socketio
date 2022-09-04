@@ -29,7 +29,7 @@ const useChatRoom = () => {
     };
   }, []);
 
-  // send the messageee along w a sender id - the sender id wouold allow us to style the UI
+  // send the messageee along w a sender id - the sender id would allow us to style the UI
   const sendMessage = (messageBody) => {
     socketRef.current.emit(NEW_MESSAGE_EVENT, {
       body: messageBody,
